@@ -48,7 +48,7 @@
 	</article>
 	<!-- end post -->
 
-	<?php comments_template(); //customize this with comments.php ?>
+	
 
 	<?php 
 		} //end while
@@ -80,10 +80,12 @@
 	//end of THE LOOP.
 	?>
 	
-
+	<section class="home-widgets">
+		<?php dynamic_sidebar( 'home-area' ); ?>		
+	</section>
 
 </main>
 <!-- end #content -->
 
-<?php get_sidebar(); //include sidebar.php ?>
+
 <?php get_footer();  //include footer.php ?>

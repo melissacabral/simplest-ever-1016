@@ -1,4 +1,9 @@
 <aside id="sidebar">
+  <?php 
+  //display widgets if possible. otherwise show phony widgets
+  //'blog-sidebar' must be registered in functions.php
+  if( ! dynamic_sidebar('blog-sidebar') ){ 
+  ?>
   <section id="categories" class="widget">
     <h3 class="widget-title"> Categories </h3>
     <ul>
@@ -42,5 +47,6 @@
       <li><?php wp_loginout(); ?></li>
     </ul>
   </section>
+  <?php } //end if no widget area ?>
 </aside>
 <!-- end #sidebar -->

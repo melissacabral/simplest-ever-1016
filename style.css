@@ -144,9 +144,21 @@ body {
   box-sizing: border-box;
 }
 
+/* custom header additions */
+#header{
+  background-size: cover;
+  background-position: center center;
+}
+
+/*post formats*/
+.format-quote{
+  background-color: red;
+}
+
+
 @media screen and (min-width:600px) {
-  ul,
-  li {
+  header ul,
+  header li {
     margin: 0;
     padding: 0;
   }
@@ -157,12 +169,32 @@ body {
     float: left;
     width: 70%;
   }
+  /* full width front page content */
+  .home #content,
+  .page-template-custom-sitemap #content,
+  .page-template-chicken-nuggets #content{
+    width: 100%;
+    float:none;
+  }
   #sidebar {
     float: right;
     width: 30%;
   }
   #footer {
     clear: both;
+  }
+
+  #footer .widget{
+    width: 25%;
+    float:left;
+    padding:1em;
+    box-sizing: border-box;
+  }
+  .home-widgets .widget{
+    width: 33%;
+    float:left;
+    padding:1em;
+    box-sizing: border-box;
   }
 
   /*float the post thumbnail*/
@@ -173,4 +205,17 @@ body {
   .postmeta{
     clear:both;
   }
+
+ .gallery-columns-4 .gallery-item{
+    width:25%;
+    float:left;
+    box-sizing: border-box;
+    margin:0;
+    min-height: 200px;
+    text-align: center;
+ } 
+ .one-third {
+    width:33%;
+    float:left;
+ }
 }

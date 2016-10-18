@@ -35,20 +35,11 @@
 			 ?>
 		</div>
 
-		<div class="postmeta">
-			<span class="author"> Posted by: <?php the_author(); ?> </span>
-			<span class="date"> <?php the_date(); ?> </span>
-			<span class="num-comments"> <?php comments_number(); ?> </span>
-			<span class="categories"> 
-				<?php the_category(); ?>
-			</span>
-			<span class="tags"><?php the_tags(); ?></span>
-		</div>
-		<!-- end postmeta -->
+		
 	</article>
 	<!-- end post -->
 
-	<?php comments_template(); //customize this with comments.php ?>
+	
 
 	<?php 
 		} //end while
